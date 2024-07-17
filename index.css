@@ -1,0 +1,363 @@
+.body {
+  margin: 0px;
+}
+
+@media (max-width: 576) {
+  banner-heading {
+    color: rgb(16, 16, 16);
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 50vw;
+}
+.vision-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+ border-style: solid;
+ border-width: 3px;
+ border-color: #1c5042;
+ border-radius: 22px;
+}
+.carosel-img {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+  color: #000;
+}
+
+.gallery-images-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+
+}
+.text-underlined {
+  text-decoration: underline;
+}
+.about-us-quote {
+  background-image: url(images/green-park-view.jpg);
+  color: #ffffff;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-vision-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  margin: 15px;
+  border-color: #000000;
+  border-radius: 20px;
+}
+
+
+.our-vision-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   border-style: solid;
+   border-width: 2px;
+   padding: 20px;
+   margin: 15px;
+   border-color: #000000;
+   border-radius: 20px;
+}
+
+.main-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-bg-container {
+  background-color: #000000;
+}
+
+.navbar-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: green;
+  font-size: 12px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.btn {
+  --color: #00A97F;
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: .3px solid var(--color);
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(.7);
+  transform: scale(.98);
+}
+
+.button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.button:hover::after {
+  filter: blur(30px);
+}
+
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+
+.button:active::before {
+  scale: 0.7;
+}
+
+  .banner-section-bg-container {
+    background-image: url("./images/banner\ image.webp");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+  }
+  .banner-caption {
+    color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .custom-outline-button {
+    color: #d0b200;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d0b200;
+    border-radius: 8px;
+  }
+  .food-munch-logo {
+    width: 80px;
+    height: 70px;
+  }
+  .about-us-section { 
+    background-color: #f9fbfe;
+  }
+  .about-us-section-img {
+    width: 270px;
+    border-radius: 22px;
+  }
+  .image1 {
+    height: 180px;
+  }
+  .about-us-section-img1 {
+    width: 400px;
+    border-style: solid;
+    border-color: #00A97F;
+    border-radius: 10px;
+    margin: 10px;
+
+  }
+  .about-us-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .about-us-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+  }
+
+ .contact-us-div {
+  background-color: rgb(4, 36, 87);
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .heading {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .pass-image {
+  height: 130px;
+  width: 130px;
+  padding-bottom: 10px;
+ }
+
+ .founder-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.memorandum-div {
+  height: 500px;
+  overflow: auto;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+}
+
+.memorandum-img {
+  display: flex;
+  height: 600px;
+  width: 400px;
+}
+
+.pancard-img {
+  display: flex;
+  height: 200px;
+}
+
+.certifacte-div {
+  height: 500px;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
