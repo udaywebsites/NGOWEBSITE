@@ -224,7 +224,7 @@
 
   .banner-section-bg-container {
     background-image: url("./images/banner\ image.webp");
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background-size: cover;
   }
